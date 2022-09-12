@@ -276,7 +276,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final request = http.MultipartRequest(
         "POST", Uri.parse("https://api.imgur.com/3/upload"));
     request.fields['title'] = "dummyImage";
-    request.headers['Authorization'] = "Client-ID " + "9ee90cd9c08d197";
+    request.headers['Authorization'] = "Client-ID " + "//your client ID";
 
     var picture = http.MultipartFile(
         'image', file!.readAsBytes().asStream(), file.lengthSync(),
